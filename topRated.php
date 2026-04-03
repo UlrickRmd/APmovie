@@ -5,7 +5,7 @@
 
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
-       <h4>Films les plus populaires</h4>
+       <h4>Films les mieux notés</h4>
      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
      <?php foreach($toprated as $movie) : ?>  
         <div class="d-flex align-items-stretchl">
@@ -15,7 +15,8 @@
               <p class=" lh-sm">
                 <strong><?php echo $movie['title']; ?></strong>
               </p>
-             <button type="button" class="btn btn-primary mt-auto">View</button>
+             
+      <a href="detail.php?id=<?=$movie['id']?>" class="btn btn-primary">View</a>
             </div>
           </div>
         </div>

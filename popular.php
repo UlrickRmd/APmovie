@@ -15,14 +15,12 @@
               <p class=" lh-sm">
                 <strong><?php echo $movie['title']; ?></strong>
               </p>
-             <button type="button" class="btn btn-primary mt-auto">View</button>
-            </div>
+             <a href="detail.php?id=<?=$movie['id']?>" class="btn btn-primary">View</a>
+            </div>         
           </div>
         </div>
      <?php endforeach; ?>
     </div>
   </div>
 </div>
-
-
 <?php require("footer.php"); ?>
